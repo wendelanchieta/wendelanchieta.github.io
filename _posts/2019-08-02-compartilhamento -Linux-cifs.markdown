@@ -34,5 +34,9 @@ No arquivo /etc/fstab será adicionada uma linha com o comando abaixo:
 
 /var/diretorioCompartilhado - Ponto de montagem local no servidor Linux;
 
-username=user,password=senha@123 - Especifica o nome de usuário e senha para se conectar ao servidor. Esse usuário não precisa ser exclusivamente o administrador do Windows. Pode se criar um usuário que tenha acesso a pasta;
+username=user,password=senha@123 - Especifica o nome de usuário e senha para se conectar ao servidor. 
+
+> [!NOTE]
+> Esse usuário não precisa ser exclusivamente o administrador do Windows. Pode se criar um usuário que tenha acesso a pasta;
+
 
