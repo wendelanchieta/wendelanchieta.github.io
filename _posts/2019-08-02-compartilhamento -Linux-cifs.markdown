@@ -14,21 +14,23 @@ Presente apenas no sistema operacional Linux, o kernel deste deve está preparad
 Vamos a um exemplo prático de como utilizar a ferramenta.
 
 O primeiramente é necessário a instalação do pacote cifs-utils.
-
+```
 # yum install cifs-utils
-
+```
 O próximo passo é criar o diretório local no linux, que será utilizado como ponto de montagem na maquina, neste exemplo usaremos /var/diretorioCompartilhado/. 
-
+```
 # mkdir /var/diretorioCompartilhado/ 
-
+```
 No arquivo /etc/fstab será adicionada uma linha com o comando abaixo:
-
+```
 # vi /etc/fstab
-
+```
+```
 //192.168.1.1/diretorioCompartilhado /var/diretorioCompartilhado cifs _netdev,rsize=16384,wsize=16384,username=kettle,password=kettle@123,gid=10,uid=10,file_mode=0777 0 0
-
+```
+```
 # chown -R kettle:root /var/diretorioCompartilhado/
-
+```
 //192.168.1.1/diretorioCompartilhado - É o IP e a pasta que está compartilhada na máquina Windows;
 
 /var/diretorioCompartilhado - Ponto de montagem local no servidor Linux;
