@@ -12,7 +12,7 @@ Presente apenas no sistema operacional Linux, o kernel deste deve está preparad
 
 Vamos a um exemplo prático de como utilizar a ferramenta.
 
-O primeiramente é necessário a instalação do pacote \colorbox{gold}{cifs-utils}.
+O primeiramente é necessário a instalação do pacote cifs-utils.
 ```bash
 # yum install cifs-utils
 ```
@@ -36,6 +36,7 @@ No arquivo /etc/fstab será adicionada uma linha com o comando abaixo:
 
 username=user,password=senha@123 - Especifica o nome de usuário e senha para se conectar ao servidor. 
 
- Esse usuário não precisa ser exclusivamente o administrador do Windows. Pode se criar um usuário que tenha acesso a pasta;
-
+<div style="background-color: #f5f0ff; border: 1px #e1e4e8 solid;padding: 16px;">
+Esse usuário não precisa ser exclusivamente o administrador do Windows. Pode se criar um usuário que tenha acesso a pasta;
+<div>
 
