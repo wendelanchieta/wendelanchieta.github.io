@@ -13,7 +13,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Wendel Anchieta
-  tagline: Software Engineer. Designer
+  tagline: Software Engineer. Data Specialist
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
