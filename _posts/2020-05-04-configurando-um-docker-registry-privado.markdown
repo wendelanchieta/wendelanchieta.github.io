@@ -25,7 +25,7 @@ Para começarmos vamos cria a pasta `/var/docker_data/images` que armazenará no
 Criando a pasta onde o Docker daemon necessita ter os certificados criados.
 
 ```bash
-# mkdir -p /etc/docker/certs.d/srv004d6774t.cade.gov.br:5000/
+# mkdir -p /etc/docker/certs.d/meu.servidor.com.br:5000/
 ```
 
 Agora criaremos nosso certificado com validade de 1 ano.
@@ -85,7 +85,7 @@ Criando a pasta de armazenamento das imagens
 # mkdir -p /var/docker_data/images
 ```
 
-Buscando a imagem oficial do ***Docker Registry*** .
+Buscando a imagem oficial do Docker ***Registry*** .
 ```bash
 # docker search registry
 # docker search registry
@@ -105,3 +105,4 @@ Subindo um container do ***Docker Registry*** com as pastas criadas mapeadas
 	--name meu-registry \
 	registry
 ```
+ 
