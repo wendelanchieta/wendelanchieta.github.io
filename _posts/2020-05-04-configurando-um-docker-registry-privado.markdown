@@ -89,9 +89,9 @@ Buscando a imagem oficial do Docker ***Registry*** .
 ```bash
 # docker search registry
 # docker search registry
-NAME                                 DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
-registry                             The Docker Registry 2.0 implementation for s…   2881                [OK]
-distribution/registry                WARNING: NOT the registry official image!!! …   57                                      [OK]
+NAME                     DESCRIPTION                                     STARS      OFFICIAL            AUTOMATED
+registry                 The Docker Registry 2.0 implementation for s…   2881       [OK]
+distribution/registry    WARNING: NOT the registry official image!!! …   57                             [OK]
 ```
 
 Subindo um container do ***Docker Registry*** com as pastas criadas mapeadas
@@ -109,8 +109,8 @@ Subindo um container do ***Docker Registry*** com as pastas criadas mapeadas
 Verificando se o container subiu.
 ```bash
 # docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                          PORTS               NAMES
-b9b94eb65745        registry            "/entrypoint.sh /etc…"   3 minutes ago       Restarting (1) 24 seconds ago                       meu-registry
+CONTAINER ID   IMAGE        COMMAND                  CREATED             STATUS          PORTS   NAMES
+b9b94eb65745   registry     "/entrypoint.sh /etc…"   3 minutes ago       2 minutes ago           meu-registry
 ```
 
 Podemos criar uma imagem baixando do Docker Hub ou a partir de um arquivo Dockerfile. Neste caso, criaremos nossa imagem base utilizando a oficial `CentOS` <br/>
@@ -230,12 +230,12 @@ meu.servidor.com.br:5000/httpd-private-registry:1.1
 Verificando a imagem na máquina client.
 ```bash
 # docker images
-REPOSITORY                                        TAG                     IMAGE ID            CREATED             SIZE
+REPOSITORY                                        TAG     IMAGE ID            CREATED             SIZE
 
-meu.servidor.com.br:5000/httpd-private-registry   1.1                     c5a012f9cf45        2 weeks ago         165MB
+meu.servidor.com.br:5000/httpd-private-registry   1.1     c5a012f9cf45        2 weeks ago         165MB
 ```
  
 <div style="background-color: #f5f0ff; border: 1px #e1e4e8 solid;padding: 16px;">
 O Docker Registry por default trabalha com https, dessa forma foi gerado um certificados SSL para o Docker Registry privado. É recomendado a utilização de certificados válidos, neste post foi utilizado um certificado auto-assinado para mera exemplificação.<div>
-
+<br/><br/>
 Com o procedimento e testes finalizados, temos agora um repositório de imagens Docker privado para utilização em projetos corporativos.
