@@ -236,9 +236,9 @@ REPOSITORY                                        TAG     IMAGE ID            CR
 
 meu.servidor.com.br:5000/httpd-private-registry   1.1     c5a012f9cf45        2 weeks ago         165MB
 ```
- 
+<br/> 
 <div style="background-color: #f5f0ff; border: 1px #e1e4e8 solid;padding: 16px;">
-O Docker Registry por default trabalha com https, dessa forma foi gerado um certificados SSL para o Docker Registry privado. É recomendado a utilização de certificados válidos, neste post foi utilizado um certificado auto-assinado para mera exemplificação.<div>
+O Docker Registry por default trabalha com https, dessa forma foi gerado um certificados SSL para o Docker Registry privado. É recomendado a utilização de certificados válidos, neste post foi utilizado um certificado auto-assinado para mera exemplificação.</div>
 
 <br/>
 Com o procedimento e testes finalizados, temos agora um repositório de imagens Docker privado para utilização em projetos corporativos.
